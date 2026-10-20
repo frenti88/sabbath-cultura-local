@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sabbath-red: #B5152B;
+  --sabbath-black: #2B2B2B;
+  --sabbath-white: #F1F1F1;
+  --sabbath-blue: #040A56;
+  --sabbath-purple: #92278F;
+  --sabbath-orange: #D05800;
+  --sabbath-yellow: #FFC501;
+  
+  --bg-primary: #0A0A0C;
+  --bg-surface: #111114;
+  --bg-surface-elevated: #16161A;
+  
+  --border-music: #1A30A0;
+  --border-literature: #92278F;
+  --border-video: #D05800;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--sabbath-white);
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--sabbath-white);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--sabbath-red);
+  color: #FFFFFF;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2B2B2E;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
+}
+
+/* Focus visibility for WCAG 2.2 AA accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--sabbath-yellow);
+  outline-offset: 3px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Reduced transparency fallback (Section 5 & Appendix C) */
+@media (prefers-reduced-transparency: reduce) {
+  header,
+  [role="dialog"] > div {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: #0A0A0C !important;
+  }
+}

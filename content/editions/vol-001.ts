@@ -1,0 +1,68 @@
+import { CulturalEdition } from "@/types/content";
+
+export const editionVol001: CulturalEdition = {
+  volNumber: "VOL. 001",
+  volLabel: "CULTURA LOCAL",
+  tagline: "COLOMBIA SUENA DIFERENTE AQUÍ.",
+  editorialNote: "Una pausa cultural con música, lectura y cine hecho en Colombia.",
+  music: {
+    id: "vol-001-music",
+    categoryNumber: "01",
+    categoryName: "MÚSICA",
+    title: "Brilla la Ciudad",
+    artist: "MATEO TORRES",
+    cover: "/assets/music-cover.webp",
+    audioSrc: "/audio/brilla-la-ciudad.wav",
+    duration: "03:52",
+    description: "Una exploración sonora entre guitarras acústicas, texturas urbanas y sintetizadores cálidos que capturan el pulso nocturno de Medellín.",
+    credits: {
+      producer: "Mateo Torres & Sabbath Records",
+      mixMaster: "Estudio La Ladera",
+      recordingStudio: "Sabbath Audio Lab",
+      city: "Medellín, Colombia",
+      year: "2026",
+    },
+  },
+  literature: {
+    id: "vol-001-literature",
+    categoryNumber: "02",
+    categoryName: "LECTURA",
+    title: "Territorio que habita",
+    author: "VALENTINA ROJAS",
+    cover: "/assets/literature-cover.webp",
+    excerpt: "“ Aquí también florecen historias que resisten...”",
+    body: {
+      paragraphs: [
+        "El valle amanece arropado por una niebla espesa que desciende de las laderas y se disuelve en el asfalto tibio. No es un silencio cualquiera: es la pausa previa al crujido de las persianas metálicas, el olor a café recién colado en los zaguanes y el rumor distante de los primeros buses que trepan la montaña.",
+        "Aquí, en las calles empinadas donde el ladrillo a la vista dialoga con la hojarasca, la memoria no se archiva en anaqueles: se camina. Cada esquina guarda la impronta de quienes aprendieron a nombrar el abismo con ternura y transformaron la urgencia en verso.",
+        "“Aquí también florecen historias que resisten”, escribió alguna vez una mano anónima sobre el muro de un callejón en Buenos Aires. Esa frase resume el pulso de quienes habitamos este territorio: no sobrevivimos a la geografía, la inventamos de nuevo en cada jornada.",
+        "Las ciudades latinoamericanas tienen esa rara virtud de parecer simultáneamente infinitas y diminutas. Puedes perderte en su laberinto de avenidas o encontrarte reflejado en la mirada de una anciana que riega begonias en un balcón del tercer piso, ajena al vértigo del mundo exterior.",
+        "Al final de la tarde, cuando el sol tiñe los cerros de un violeta encendido, ese color que no pertenece ni al día ni a la noche, la ciudad exhala. Y en ese instante preciso, entre el bocado de un refrigerio y la última luz, comprendemos que el territorio no es el suelo que pisamos, sino la memoria que decidimos sostener juntos.",
+      ],
+    },
+    credits: {
+      editorial: "Sabbath Cuadernos de Bolsillo",
+      edition: "Primera edición especial para refrigerios culturales",
+      city: "Medellín, Colombia",
+      year: "2026",
+    },
+  },
+  video: {
+    id: "vol-001-video",
+    categoryNumber: "03",
+    categoryName: "VIDEO",
+    title: "La otra ciudad",
+    director: "Un cortometraje de Laura Méndez",
+    poster: "/assets/video-cover.webp",
+    videoSrc: "/video/la-otra-ciudad.mp4",
+    duration: "04:18",
+    description: "Historias cotidianas que revelan lo extraordinario de lo nuestro.",
+    credits: {
+      cinematography: "Laura Méndez",
+      production: "Colectivo Mirada Local",
+      cast: ["Mariana Restrepo", "Carlos Mario Henao", "Lucía Gómez"],
+      city: "Medellín, Colombia",
+      year: "2026",
+    },
+  },
+};
